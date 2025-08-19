@@ -9,7 +9,7 @@
 <link href="walkthrough_files/libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.7.33">
 
-  <title>Auxiliar #2</title>
+  <title>🐍 Auxiliar #2</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -195,7 +195,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Auxiliar #2</h1>
+  <h1 class="title">🐍 Auxiliar #2</h1>
   <p class="subtitle">CC1002-10 Introducción a la Programación</p>
 
 <div class="quarto-title-authors">
@@ -203,38 +203,93 @@
 
 </section>
 <section id="temas" class="title-slide slide level1 center">
-<h1>Temas</h1>
+<h1>📋 Temas</h1>
 <ul>
 <li class="fragment">Funciones</li>
+<li class="fragment">Módulos</li>
 <li class="fragment">Booleanos</li>
 <li class="fragment">Condicionales</li>
 <li class="fragment">Recursividad</li>
 </ul>
 </section>
 
+<section>
 <section id="funciones" class="title-slide slide level1 center">
-<h1>Funciones</h1>
+<h1>⚙️ Funciones</h1>
 
+<img data-src="images/functionmeme.jpg" class="shadow r-stretch"></section>
+<section id="funciones-númericas" class="slide level2">
+<h2>Funciones númericas</h2>
+<ul>
+<li><code>abs(x)</code>: Valor absoluto de <code>x</code></li>
+<li><code>round(x, n)</code>: Redondea <code>x</code> a <code>n</code> decimales (por defecto <code>n=0</code>)</li>
+<li><code>min(x1, x2, ..., xn)</code>: Devuelve el valor mínimo entre los argumentos</li>
+<li><code>max(x1, x2, ..., xn)</code>: Devuelve el valor máximo entre los argumentos</li>
+<li><code>pow(x, y)</code>: Calcula <code>x</code> elevado a la <code>y</code></li>
+</ul>
 </section>
+<section id="funciones-de-entrada-y-salida" class="slide level2">
+<h2>Funciones de entrada y salida</h2>
+<ul>
+<li><code>print(x1, x2, ..., xn)</code>: Imprime los argumentos en la salida estándar</li>
+<li><code>input(prompt)</code>: Lee una línea desde la entrada estándar y la devuelve como una cadena</li>
+<li><code>type(x)</code>: Devuelve el tipo del objeto <code>x</code></li>
+</ul>
+</section></section>
+<section>
+<section id="módulos-típicos" class="title-slide slide level1 center">
+<h1>🗂️ Módulos (típicos)</h1>
 
+<img data-src="images/modulosmeme.jpg" class="shadow r-stretch"></section>
+<section id="módulo-math" class="slide level2">
+<h2>🧮 Módulo <code>math</code></h2>
+<p><code>math</code>: Proporciona funciones matemáticas avanzadas como <code>sin</code>, <code>cos</code>, <code>sqrt</code>, etc.</p>
+<p><strong><em>Funciones/Constantes:</em></strong></p>
+<ul>
+<li><code>math.sqrt(x)</code>: Raíz cuadrada de <code>x</code></li>
+<li><code>math.sin(x)</code>: Seno de <code>x</code> (en radianes)</li>
+<li><code>math.cos(x)</code>: Coseno de <code>x</code> (en radianes)</li>
+<li><code>math.log(x, base)</code>: Logaritmo de <code>x</code> en la base especificada (por defecto base <code>e</code>)</li>
+<li><code>math.factorial(n)</code>: Factorial de <code>n</code> (n debe ser uno entero no negativo)</li>
+<li><code>math.pi</code>: Constante π (aproximadamente 3.14159)</li>
+<li><code>math.e</code>: Constante e (aproximadamente 2.71828)</li>
+<li><code>math.ceil(x)</code>: Redondea <code>x</code> hacia arriba al entero más cercano</li>
+<li><code>math.floor(x)</code>: Redondea <code>x</code> hacia abajo al entero más cercano</li>
+<li><code>math.gcd(a, b)</code>: Máximo común divisor de <code>a</code> y <code>b</code></li>
+</ul>
+</section>
+<section id="módulo-random" class="slide level2">
+<h2>🎲 Módulo <code>random</code></h2>
+<p><code>random</code>: Proporciona funciones para generar números aleatorios.</p>
+<p><strong><em>Funciones:</em></strong></p>
+<ul>
+<li><code>random.random()</code>: Devuelve un número flotante aleatorio en el rango [0.0, 1.0)</li>
+<li><code>random.randint(a, b)</code>: Devuelve un entero aleatorio entre <code>a</code> y <code>b</code> (ambos inclusive)</li>
+</ul>
+</section></section>
 <section>
 <section id="booleanos" class="title-slide slide level1 center">
-<h1>Booleanos</h1>
+<h1>🔘 Booleanos</h1>
+
+</section>
+<section id="introducción" class="slide level2">
+<h2>Introducción</h2>
 <p>Ahora vamos a introducir el tipo <code>bool</code>, que se utiliza para representar valores de verdad y puede utilizarse en variables, parámetros, llamados de funciones y otras expresiones</p>
+<p>Es un tipo de dato que puede tener dos valores:</p>
 <ul>
 <li>True</li>
 <li>False</li>
 </ul>
 <p><strong>OJO: No es lo mismo <code>"True"</code> que <code>True</code></strong></p>
-<div id="fd9e69ce" class="cell" data-execution_count="1">
+<div id="a5633b63" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="bu">type</span>(<span class="st">"True"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="1">
+<div class="cell-output cell-output-display" data-execution_count="71">
 <pre><code>str</code></pre>
 </div>
 </div>
-<div id="cb6d9ab9" class="cell" data-execution_count="2">
+<div id="442b9a12" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="bu">type</span>(<span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="2">
+<div class="cell-output cell-output-display" data-execution_count="72">
 <pre><code>bool</code></pre>
 </div>
 </div>
@@ -243,26 +298,23 @@
 <h2>Conversiones</h2>
 <p>Al igual que con los otros tipos, existe la función <code>bool</code> que permite convertir de otros tipos a booleano. Sin embargo, no es muy recomendable utilizar esta función puesto que su uso muchas veces lleva a resultados inesperados.</p>
 <p>Ejemplos <code>True</code></p>
-<div id="d77f7171" class="cell" data-execution_count="3">
+<div id="0b14c755" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="bu">bool</span>(<span class="st">"False"</span>)</span>
 <span id="cb5-2"><a href="" aria-hidden="true" tabindex="-1"></a><span class="bu">bool</span>(<span class="dv">100</span>)</span>
 <span id="cb5-3"><a href="" aria-hidden="true" tabindex="-1"></a><span class="bu">bool</span>(<span class="op">-</span><span class="dv">50</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="3">
+<div class="cell-output cell-output-display" data-execution_count="73">
 <pre><code>True</code></pre>
 </div>
 </div>
 <p>Ejemplos <code>False</code></p>
-<div id="bb7e69ee" class="cell" data-execution_count="4">
+<div id="dc5e6578" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="bu">bool</span>(<span class="dv">0</span>)</span>
 <span id="cb7-2"><a href="" aria-hidden="true" tabindex="-1"></a><span class="bu">bool</span>(<span class="op">-</span><span class="dv">0</span>)</span>
 <span id="cb7-3"><a href="" aria-hidden="true" tabindex="-1"></a><span class="bu">bool</span>(<span class="st">""</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="4">
+<div class="cell-output cell-output-display" data-execution_count="74">
 <pre><code>False</code></pre>
 </div>
 </div>
-</section>
-<section id="en-funciones" class="slide level2">
-<h2>En funciones</h2>
 </section>
 <section id="operadores-booleanos" class="slide level2">
 <h2>Operadores Booleanos</h2>
@@ -295,44 +347,76 @@
 <p>El tercer operador lógico en Python es la negación, la cual se expresa con la palabra reservada <code>not</code>. Como se trata de un operador <strong>unario</strong> se debe anteponer al operando.</p>
 <p>El operador not no tiene ninguna diferencia con la operación lógica de negación y tiene una precedencia que es mayor a la de la conjunción y a la de la disyunción. Es decir que,</p>
 <p><code>not a and b</code> siempre será equivalente a <code>(not a) and b</code> y que <code>a and not b</code> siempre será equivalente a <code>a and (not b)</code>.</p>
+</section>
+<section id="en-funciones" class="slide level2">
+<h2>En funciones</h2>
+<div id="8950ae7a" class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> puede_conducir(edad, tiene_licencia):</span>
+<span id="cb9-2"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
+<span id="cb9-3"><a href="" aria-hidden="true" tabindex="-1"></a><span class="co">    Verifica si una persona puede conducir</span></span>
+<span id="cb9-4"><a href="" aria-hidden="true" tabindex="-1"></a><span class="co">    Requiere: tener 18 años o más Y tener licencia</span></span>
+<span id="cb9-5"><a href="" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
+<span id="cb9-6"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> edad <span class="op">&gt;=</span> <span class="dv">18</span> <span class="kw">and</span> tiene_licencia</span>
+<span id="cb9-7"><a href="" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-8"><a href="" aria-hidden="true" tabindex="-1"></a><span class="co"># Ejemplo</span></span>
+<span id="cb9-9"><a href="" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(puede_conducir(<span class="dv">20</span>, <span class="va">True</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>True</code></pre>
+</div>
+</div>
+<div id="2687ae7a" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> puede_entrar_al_club(edad, es_miembro, tiene_invitacion):</span>
+<span id="cb11-2"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
+<span id="cb11-3"><a href="" aria-hidden="true" tabindex="-1"></a><span class="co">    Puede entrar si:</span></span>
+<span id="cb11-4"><a href="" aria-hidden="true" tabindex="-1"></a><span class="co">    - Es mayor de edad Y es miembro</span></span>
+<span id="cb11-5"><a href="" aria-hidden="true" tabindex="-1"></a><span class="co">    - o tiene invitación (sin importar edad o membresía)</span></span>
+<span id="cb11-6"><a href="" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
+<span id="cb11-7"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> (edad <span class="op">&gt;=</span> <span class="dv">18</span> <span class="kw">and</span> es_miembro) <span class="kw">or</span> tiene_invitacion</span>
+<span id="cb11-8"><a href="" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-9"><a href="" aria-hidden="true" tabindex="-1"></a><span class="co"># Ejemplo</span></span>
+<span id="cb11-10"><a href="" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(puede_entrar_al_club(<span class="dv">20</span>, <span class="va">True</span>, <span class="va">False</span>))    </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>True</code></pre>
+</div>
+</div>
 </section></section>
 <section id="ejercicios" class="title-slide slide level1 center">
 <h1>Ejercicios</h1>
 <p>¿Cuál es el valor de las siguientes expresiones?</p>
-<div id="3d51d39f" class="cell" data-execution_count="5">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="va">False</span> <span class="kw">and</span> p</span>
-<span id="cb9-2"><a href="" aria-hidden="true" tabindex="-1"></a><span class="va">True</span> <span class="kw">and</span> p</span>
-<span id="cb9-3"><a href="" aria-hidden="true" tabindex="-1"></a>p <span class="kw">and</span> <span class="va">True</span></span>
-<span id="cb9-4"><a href="" aria-hidden="true" tabindex="-1"></a>p <span class="kw">and</span> <span class="va">False</span></span>
-<span id="cb9-5"><a href="" aria-hidden="true" tabindex="-1"></a>p <span class="kw">and</span> q <span class="kw">and</span> r</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="169eba7b" class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="va">False</span> <span class="kw">and</span> p</span>
+<span id="cb13-2"><a href="" aria-hidden="true" tabindex="-1"></a><span class="va">True</span> <span class="kw">and</span> p</span>
+<span id="cb13-3"><a href="" aria-hidden="true" tabindex="-1"></a>p <span class="kw">and</span> <span class="va">True</span></span>
+<span id="cb13-4"><a href="" aria-hidden="true" tabindex="-1"></a>p <span class="kw">and</span> <span class="va">False</span></span>
+<span id="cb13-5"><a href="" aria-hidden="true" tabindex="-1"></a>p <span class="kw">and</span> q <span class="kw">and</span> r</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="278bfecb" class="cell" data-execution_count="6">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="va">False</span> <span class="kw">or</span> p</span>
-<span id="cb10-2"><a href="" aria-hidden="true" tabindex="-1"></a><span class="va">True</span> <span class="kw">or</span> p</span>
-<span id="cb10-3"><a href="" aria-hidden="true" tabindex="-1"></a>p <span class="kw">or</span> <span class="va">True</span></span>
-<span id="cb10-4"><a href="" aria-hidden="true" tabindex="-1"></a>p <span class="kw">or</span> <span class="va">False</span></span>
-<span id="cb10-5"><a href="" aria-hidden="true" tabindex="-1"></a>p <span class="kw">or</span> q <span class="kw">or</span> r</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="acb9a8cf" class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="va">False</span> <span class="kw">or</span> p</span>
+<span id="cb14-2"><a href="" aria-hidden="true" tabindex="-1"></a><span class="va">True</span> <span class="kw">or</span> p</span>
+<span id="cb14-3"><a href="" aria-hidden="true" tabindex="-1"></a>p <span class="kw">or</span> <span class="va">True</span></span>
+<span id="cb14-4"><a href="" aria-hidden="true" tabindex="-1"></a>p <span class="kw">or</span> <span class="va">False</span></span>
+<span id="cb14-5"><a href="" aria-hidden="true" tabindex="-1"></a>p <span class="kw">or</span> q <span class="kw">or</span> r</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="2a5fe9d8" class="cell" data-execution_count="7">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="kw">not</span> <span class="va">True</span></span>
-<span id="cb11-2"><a href="" aria-hidden="true" tabindex="-1"></a><span class="kw">not</span> <span class="kw">not</span> <span class="va">True</span></span>
-<span id="cb11-3"><a href="" aria-hidden="true" tabindex="-1"></a><span class="kw">not</span> <span class="kw">not</span> <span class="kw">not</span> <span class="va">False</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="b3e33cdc" class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="kw">not</span> <span class="va">True</span></span>
+<span id="cb15-2"><a href="" aria-hidden="true" tabindex="-1"></a><span class="kw">not</span> <span class="kw">not</span> <span class="va">True</span></span>
+<span id="cb15-3"><a href="" aria-hidden="true" tabindex="-1"></a><span class="kw">not</span> <span class="kw">not</span> <span class="kw">not</span> <span class="va">False</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 
 <section>
 <section id="condicionales" class="title-slide slide level1 center">
-<h1>Condicionales</h1>
+<h1>👮🏻‍♂️ Condicionales</h1>
 
 <img data-src="images/ifelsememe2.jpg" class="shadow r-stretch"></section>
 <section id="if-else" class="slide level2">
 <h2><code>if-else</code></h2>
 <p>En Python, las instrucciones condicionales se usan utilizando la siguiente estructura:</p>
-<div id="d4210954" class="cell" data-execution_count="8">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> expresion_booleana:</span>
-<span id="cb12-2"><a href="" aria-hidden="true" tabindex="-1"></a>    cuerpo_if</span>
-<span id="cb12-3"><a href="" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
-<span id="cb12-4"><a href="" aria-hidden="true" tabindex="-1"></a>    cuerpo_else</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="58304433" class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> expresion_booleana:</span>
+<span id="cb16-2"><a href="" aria-hidden="true" tabindex="-1"></a>    cuerpo_if</span>
+<span id="cb16-3"><a href="" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb16-4"><a href="" aria-hidden="true" tabindex="-1"></a>    cuerpo_else</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><strong><code>expresion_booleana:</code></strong> es una expresión que tiene que tener un valor de verdad.</p>
 <p><strong><code>cuerpo_if</code></strong>: son las instrucciones que se van a ejecutar si la expresión booleana es verdadera en el momento de la evaluación.</p>
@@ -341,105 +425,129 @@
 <section id="if-elif-else" class="slide level2">
 <h2><code>if-elif-else</code></h2>
 <p>Ahora agregaremos la posibilidad de tener <strong>más de una condición</strong>, para lo cual tenemos que introducir los bloques que en Python se llaman <code>elif</code>.</p>
-<div id="c2be9e40" class="cell" data-execution_count="9">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> cond1:</span>
-<span id="cb13-2"><a href="" aria-hidden="true" tabindex="-1"></a>    bloque1()</span>
-<span id="cb13-3"><a href="" aria-hidden="true" tabindex="-1"></a><span class="cf">elif</span> cond2:</span>
-<span id="cb13-4"><a href="" aria-hidden="true" tabindex="-1"></a>    bloque2()</span>
-<span id="cb13-5"><a href="" aria-hidden="true" tabindex="-1"></a><span class="cf">elif</span> cond3:</span>
-<span id="cb13-6"><a href="" aria-hidden="true" tabindex="-1"></a>    bloque3()</span>
-<span id="cb13-7"><a href="" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
-<span id="cb13-8"><a href="" aria-hidden="true" tabindex="-1"></a>    bloque_else()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="6350be6e" class="cell" data-execution_count="11">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> cond1:</span>
+<span id="cb17-2"><a href="" aria-hidden="true" tabindex="-1"></a>    bloque1()</span>
+<span id="cb17-3"><a href="" aria-hidden="true" tabindex="-1"></a><span class="cf">elif</span> cond2:</span>
+<span id="cb17-4"><a href="" aria-hidden="true" tabindex="-1"></a>    bloque2()</span>
+<span id="cb17-5"><a href="" aria-hidden="true" tabindex="-1"></a><span class="cf">elif</span> cond3:</span>
+<span id="cb17-6"><a href="" aria-hidden="true" tabindex="-1"></a>    bloque3()</span>
+<span id="cb17-7"><a href="" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb17-8"><a href="" aria-hidden="true" tabindex="-1"></a>    bloque_else()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><strong>Importante:</strong> Cuando se encuentra una condición verdadera, se ejecuta el cuerpo asociado a la condición y se termina la ejecución del condicional sin importar si más adelante había otras condiciones que también fueran verdaderas.</p>
 </section>
 <section id="diferencia-if-if-y-if-elif" class="slide level2">
 <h2>Diferencia: <code>if-if</code> y <code>if-elif</code></h2>
+<div class="columns">
+<div class="column" style="width:50%;">
 <p><strong><code>if-if</code></strong></p>
-<div id="5615a012" class="cell" data-execution_count="10">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> mayorA(n):</span>
-<span id="cb14-2"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> n<span class="op">&gt;</span><span class="dv">10</span>:</span>
-<span id="cb14-3"><a href="" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Es mayor a 10"</span>)</span>
-<span id="cb14-4"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> n<span class="op">&gt;</span><span class="dv">20</span>:</span>
-<span id="cb14-5"><a href="" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Es mayor a 20"</span>)</span>
-<span id="cb14-6"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> n<span class="op">&gt;</span><span class="dv">30</span>:</span>
-<span id="cb14-7"><a href="" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Es mayor a 30"</span>)</span>
-<span id="cb14-8"><a href="" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-9"><a href="" aria-hidden="true" tabindex="-1"></a>mayorA(<span class="dv">25</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="bb27075c" class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> mayorA(n):</span>
+<span id="cb18-2"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> n<span class="op">&gt;</span><span class="dv">10</span>:</span>
+<span id="cb18-3"><a href="" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Es mayor a 10"</span>)</span>
+<span id="cb18-4"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> n<span class="op">&gt;</span><span class="dv">20</span>:</span>
+<span id="cb18-5"><a href="" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Es mayor a 20"</span>)</span>
+<span id="cb18-6"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> n<span class="op">&gt;</span><span class="dv">30</span>:</span>
+<span id="cb18-7"><a href="" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Es mayor a 30"</span>)</span>
+<span id="cb18-8"><a href="" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-9"><a href="" aria-hidden="true" tabindex="-1"></a>mayorA(<span class="dv">25</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Es mayor a 10
 Es mayor a 20</code></pre>
 </div>
 </div>
+</div><div class="column" style="width:50%;">
 <p><strong><code>if-elif</code></strong></p>
-<div id="c00c7cf9" class="cell" data-execution_count="11">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> mayorA(n):</span>
-<span id="cb16-2"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> n<span class="op">&gt;</span><span class="dv">10</span>:</span>
-<span id="cb16-3"><a href="" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Es mayor a 10"</span>)</span>
-<span id="cb16-4"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> n<span class="op">&gt;</span><span class="dv">20</span>:</span>
-<span id="cb16-5"><a href="" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Es mayor a 20"</span>)</span>
-<span id="cb16-6"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> n<span class="op">&gt;</span><span class="dv">30</span>:</span>
-<span id="cb16-7"><a href="" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Es mayor a 30"</span>)</span>
-<span id="cb16-8"><a href="" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-9"><a href="" aria-hidden="true" tabindex="-1"></a>mayorA(<span class="dv">99</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="442beb38" class="cell" data-execution_count="13">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> mayorA(n):</span>
+<span id="cb20-2"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> n<span class="op">&gt;</span><span class="dv">10</span>:</span>
+<span id="cb20-3"><a href="" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Es mayor a 10"</span>)</span>
+<span id="cb20-4"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> n<span class="op">&gt;</span><span class="dv">20</span>:</span>
+<span id="cb20-5"><a href="" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Es mayor a 20"</span>)</span>
+<span id="cb20-6"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> n<span class="op">&gt;</span><span class="dv">30</span>:</span>
+<span id="cb20-7"><a href="" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Es mayor a 30"</span>)</span>
+<span id="cb20-8"><a href="" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-9"><a href="" aria-hidden="true" tabindex="-1"></a>mayorA(<span class="dv">99</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Es mayor a 10</code></pre>
 </div>
 </div>
+</div></div>
 </section>
 <section id="otro-ejemplo" class="slide level2">
 <h2>Otro ejemplo</h2>
 <p><strong><code>if-elif-else</code></strong></p>
-<div id="6a754872" class="cell" data-execution_count="12">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> mayorA(n):</span>
-<span id="cb18-2"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> n<span class="op">&gt;</span><span class="dv">10</span>:</span>
-<span id="cb18-3"><a href="" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Es mayor a 10"</span>)</span>
-<span id="cb18-4"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> n<span class="op">&gt;</span><span class="dv">20</span>:</span>
-<span id="cb18-5"><a href="" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Es mayor a 20"</span>)</span>
-<span id="cb18-6"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> n<span class="op">&gt;</span><span class="dv">30</span>:</span>
-<span id="cb18-7"><a href="" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Es mayor a 30"</span>)</span>
-<span id="cb18-8"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
-<span id="cb18-9"><a href="" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Es menor a 10"</span>)</span>
-<span id="cb18-10"><a href="" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-11"><a href="" aria-hidden="true" tabindex="-1"></a>mayorA(<span class="dv">8</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cae07363" class="cell" data-execution_count="14">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> mayorA(n):</span>
+<span id="cb22-2"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> n<span class="op">&gt;</span><span class="dv">10</span>:</span>
+<span id="cb22-3"><a href="" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Es mayor a 10"</span>)</span>
+<span id="cb22-4"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> n<span class="op">&lt;</span><span class="dv">8</span>:</span>
+<span id="cb22-5"><a href="" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Es menor a 8"</span>)</span>
+<span id="cb22-6"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> n<span class="op">&gt;</span><span class="dv">4</span>:</span>
+<span id="cb22-7"><a href="" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Es mayor a 4"</span>)</span>
+<span id="cb22-8"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb22-9"><a href="" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Es menor a 10"</span>)</span>
+<span id="cb22-10"><a href="" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-11"><a href="" aria-hidden="true" tabindex="-1"></a>mayorA(<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Es menor a 10</code></pre>
+<pre><code>Es menor a 8</code></pre>
 </div>
 </div>
 </section>
 <section id="condicionales-anidados" class="slide level2">
 <h2>Condicionales Anidados</h2>
 <p>Llamamos condicional anidado a la situación en la cual hay una instrucción condicional dentro del cuerpo de otra instrucción condicional.</p>
-<div id="bf281491" class="cell" data-execution_count="13">
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> es_positivo_de_un_solo_digito_v1(x):</span>
-<span id="cb20-2"><a href="" aria-hidden="true" tabindex="-1"></a>   <span class="cf">if</span> x <span class="op">&gt;</span> <span class="dv">0</span>:</span>
-<span id="cb20-3"><a href="" aria-hidden="true" tabindex="-1"></a>       <span class="cf">if</span> x <span class="op">&lt;</span> <span class="dv">10</span>:</span>
-<span id="cb20-4"><a href="" aria-hidden="true" tabindex="-1"></a>           <span class="cf">return</span> <span class="va">True</span></span>
-<span id="cb20-5"><a href="" aria-hidden="true" tabindex="-1"></a>       <span class="cf">else</span>:</span>
-<span id="cb20-6"><a href="" aria-hidden="true" tabindex="-1"></a>           <span class="cf">return</span> <span class="va">False</span></span>
-<span id="cb20-7"><a href="" aria-hidden="true" tabindex="-1"></a>   <span class="cf">else</span>:</span>
-<span id="cb20-8"><a href="" aria-hidden="true" tabindex="-1"></a>       <span class="cf">return</span> <span class="va">False</span></span>
-<span id="cb20-9"><a href="" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-10"><a href="" aria-hidden="true" tabindex="-1"></a>es_positivo_de_un_solo_digito_v1(<span class="dv">25</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="8">
+<div id="cce82471" class="cell" data-execution_count="15">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> es_positivo_de_un_solo_digito_v1(x):</span>
+<span id="cb24-2"><a href="" aria-hidden="true" tabindex="-1"></a>   <span class="cf">if</span> x <span class="op">&gt;</span> <span class="dv">0</span>:</span>
+<span id="cb24-3"><a href="" aria-hidden="true" tabindex="-1"></a>       <span class="cf">if</span> x <span class="op">&lt;</span> <span class="dv">10</span>:</span>
+<span id="cb24-4"><a href="" aria-hidden="true" tabindex="-1"></a>           <span class="cf">return</span> <span class="va">True</span></span>
+<span id="cb24-5"><a href="" aria-hidden="true" tabindex="-1"></a>       <span class="cf">else</span>:</span>
+<span id="cb24-6"><a href="" aria-hidden="true" tabindex="-1"></a>           <span class="cf">return</span> <span class="va">False</span></span>
+<span id="cb24-7"><a href="" aria-hidden="true" tabindex="-1"></a>   <span class="cf">else</span>:</span>
+<span id="cb24-8"><a href="" aria-hidden="true" tabindex="-1"></a>       <span class="cf">return</span> <span class="va">False</span></span>
+<span id="cb24-9"><a href="" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-10"><a href="" aria-hidden="true" tabindex="-1"></a>es_positivo_de_un_solo_digito_v1(<span class="dv">25</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="80">
 <pre><code>False</code></pre>
 </div>
 </div>
 <p>El mismo ejemplo, pero ocupando <strong><em>operadores booleanos</em></strong>:</p>
-<div id="e337208e" class="cell" data-execution_count="14">
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> es_positivo_de_un_solo_digito_v2(x):</span>
-<span id="cb22-2"><a href="" aria-hidden="true" tabindex="-1"></a>   <span class="cf">if</span> x <span class="op">&gt;</span> <span class="dv">0</span> <span class="kw">and</span> x <span class="op">&lt;</span> <span class="dv">10</span>:</span>
-<span id="cb22-3"><a href="" aria-hidden="true" tabindex="-1"></a>       <span class="cf">return</span> <span class="va">True</span></span>
-<span id="cb22-4"><a href="" aria-hidden="true" tabindex="-1"></a>   <span class="cf">else</span>:</span>
-<span id="cb22-5"><a href="" aria-hidden="true" tabindex="-1"></a>       <span class="cf">return</span> <span class="va">False</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="17ee12f6" class="cell" data-execution_count="16">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> es_positivo_de_un_solo_digito_v2(x):</span>
+<span id="cb26-2"><a href="" aria-hidden="true" tabindex="-1"></a>   <span class="cf">if</span> x <span class="op">&gt;</span> <span class="dv">0</span> <span class="kw">and</span> x <span class="op">&lt;</span> <span class="dv">10</span>:</span>
+<span id="cb26-3"><a href="" aria-hidden="true" tabindex="-1"></a>       <span class="cf">return</span> <span class="va">True</span></span>
+<span id="cb26-4"><a href="" aria-hidden="true" tabindex="-1"></a>   <span class="cf">else</span>:</span>
+<span id="cb26-5"><a href="" aria-hidden="true" tabindex="-1"></a>       <span class="cf">return</span> <span class="va">False</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="otro-ejemplo-1" class="slide level2">
+<h2>Otro ejemplo</h2>
+<p><strong><code>if´s anidados</code></strong></p>
+<div id="cb3596f0" class="cell" data-execution_count="17">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> mayorA(n):</span>
+<span id="cb27-2"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> n<span class="op">&gt;</span><span class="dv">10</span>:</span>
+<span id="cb27-3"><a href="" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Es mayor a 10"</span>)</span>
+<span id="cb27-4"><a href="" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> n<span class="op">&lt;</span><span class="dv">8</span>:</span>
+<span id="cb27-5"><a href="" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="st">"Es menor a 8"</span>)</span>
+<span id="cb27-6"><a href="" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> n<span class="op">&gt;</span><span class="dv">4</span>:</span>
+<span id="cb27-7"><a href="" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="st">"Es mayor a 4"</span>)</span>
+<span id="cb27-8"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb27-9"><a href="" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Es menor a 10"</span>)</span>
+<span id="cb27-10"><a href="" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-11"><a href="" aria-hidden="true" tabindex="-1"></a>mayorA(<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Es menor a 10</code></pre>
+</div>
 </div>
 </section></section>
 <section>
 <section id="recursividad" class="title-slide slide level1 center">
-<h1>Recursividad</h1>
+<h1>🔄 Recursividad</h1>
 
 <img data-src="images/recursionmeme1.png" class="shadow r-stretch"></section>
-<section id="introducción" class="slide level2">
+<section id="introducción-1" class="slide level2">
 <h2>Introducción</h2>
 <p>En Python, la recursividad se refiere a <strong>una función que se llama a sí misma</strong> para resolver un problema.</p>
 <p>Implica dos componentes críticos:</p>
@@ -468,76 +576,86 @@ n! = n \cdot (n-1)!
 </section>
 <section id="en-python" class="slide level2">
 <h2>En Python</h2>
-<div id="4786c16a" class="cell" data-execution_count="15">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> factorial(n):</span>
-<span id="cb23-2"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> n <span class="op">==</span> <span class="dv">0</span>:</span>
-<span id="cb23-3"><a href="" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="dv">1</span></span>
-<span id="cb23-4"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
-<span id="cb23-5"><a href="" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> n <span class="op">*</span> factorial(n<span class="op">-</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="9d335275" class="cell" data-execution_count="18">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> factorial(n):</span>
+<span id="cb29-2"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> n <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb29-3"><a href="" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="dv">1</span></span>
+<span id="cb29-4"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb29-5"><a href="" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> n <span class="op">*</span> factorial(n<span class="op">-</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Como pueden notar, la función <code>factorial()</code> está incluida dentro de su definición.</p>
 </section>
 <section id="caso-base" class="slide level2">
 <h2>Caso Base</h2>
-<div class="sourceCode" id="cb24" data-code-line-numbers="2-3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href=""></a><span class="kw">def</span> factorial(n):</span>
-<span id="cb24-2"><a href=""></a>    <span class="cf">if</span> n <span class="op">==</span> <span class="dv">0</span>:</span>
-<span id="cb24-3"><a href=""></a>        <span class="cf">return</span> <span class="dv">1</span></span>
-<span id="cb24-4"><a href=""></a>    <span class="cf">else</span>:</span>
-<span id="cb24-5"><a href=""></a>        <span class="cf">return</span> n <span class="op">*</span> factorial(n<span class="op">-</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb30" data-code-line-numbers="2-3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href=""></a><span class="kw">def</span> factorial(n):</span>
+<span id="cb30-2"><a href=""></a>    <span class="cf">if</span> n <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb30-3"><a href=""></a>        <span class="cf">return</span> <span class="dv">1</span></span>
+<span id="cb30-4"><a href=""></a>    <span class="cf">else</span>:</span>
+<span id="cb30-5"><a href=""></a>        <span class="cf">return</span> n <span class="op">*</span> factorial(n<span class="op">-</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="caso-recursivo" class="slide level2">
 <h2>Caso Recursivo</h2>
-<div class="sourceCode" id="cb25" data-code-line-numbers="4-5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href=""></a><span class="kw">def</span> factorial(n):</span>
-<span id="cb25-2"><a href=""></a>    <span class="cf">if</span> n <span class="op">==</span> <span class="dv">0</span>:</span>
-<span id="cb25-3"><a href=""></a>        <span class="cf">return</span> <span class="dv">1</span></span>
-<span id="cb25-4"><a href=""></a>    <span class="cf">else</span>:</span>
-<span id="cb25-5"><a href=""></a>        <span class="cf">return</span> n <span class="op">*</span> factorial(n<span class="op">-</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb31" data-code-line-numbers="4-5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href=""></a><span class="kw">def</span> factorial(n):</span>
+<span id="cb31-2"><a href=""></a>    <span class="cf">if</span> n <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb31-3"><a href=""></a>        <span class="cf">return</span> <span class="dv">1</span></span>
+<span id="cb31-4"><a href=""></a>    <span class="cf">else</span>:</span>
+<span id="cb31-5"><a href=""></a>        <span class="cf">return</span> n <span class="op">*</span> factorial(n<span class="op">-</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Vuelve a llamar a la función <code>factorial()</code></p>
 </section>
 <section id="ejemplo-iteración" class="slide level2">
 <h2>Ejemplo iteración</h2>
-<div class="sourceCode" id="cb26" data-code-line-numbers="5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href=""></a><span class="kw">def</span> factorial(<span class="dv">2</span>):</span>
-<span id="cb26-2"><a href=""></a>    <span class="cf">if</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span>:</span>
-<span id="cb26-3"><a href=""></a>        <span class="cf">return</span> <span class="dv">1</span></span>
-<span id="cb26-4"><a href=""></a>    <span class="cf">else</span>:</span>
-<span id="cb26-5"><a href=""></a>        <span class="cf">return</span> <span class="dv">2</span> <span class="op">*</span> factorial(<span class="dv">2</span><span class="op">-</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb27" data-code-line-numbers="5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href=""></a><span class="kw">def</span> factorial(<span class="dv">1</span>):</span>
-<span id="cb27-2"><a href=""></a>    <span class="cf">if</span> <span class="dv">1</span> <span class="op">==</span> <span class="dv">0</span>:</span>
-<span id="cb27-3"><a href=""></a>        <span class="cf">return</span> <span class="dv">1</span></span>
-<span id="cb27-4"><a href=""></a>    <span class="cf">else</span>:</span>
-<span id="cb27-5"><a href=""></a>        <span class="cf">return</span> <span class="dv">1</span> <span class="op">*</span> factorial(<span class="dv">1</span><span class="op">-</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb28" data-code-line-numbers="3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href=""></a><span class="kw">def</span> factorial(<span class="dv">0</span>):</span>
-<span id="cb28-2"><a href=""></a>    <span class="cf">if</span> <span class="dv">0</span> <span class="op">==</span> <span class="dv">0</span>:</span>
-<span id="cb28-3"><a href=""></a>        <span class="cf">return</span> <span class="dv">1</span></span>
-<span id="cb28-4"><a href=""></a>    <span class="cf">else</span>:</span>
-<span id="cb28-5"><a href=""></a>        <span class="cf">return</span> <span class="dv">0</span> <span class="op">*</span> factorial(<span class="dv">0</span><span class="op">-</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div class="sourceCode" id="cb32" data-code-line-numbers="5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href=""></a><span class="kw">def</span> factorial(<span class="dv">2</span>):</span>
+<span id="cb32-2"><a href=""></a>    <span class="cf">if</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb32-3"><a href=""></a>        <span class="cf">return</span> <span class="dv">1</span></span>
+<span id="cb32-4"><a href=""></a>    <span class="cf">else</span>:</span>
+<span id="cb32-5"><a href=""></a>        <span class="cf">return</span> <span class="dv">2</span> <span class="op">*</span> factorial(<span class="dv">2</span><span class="op">-</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb33" data-code-line-numbers="5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href=""></a><span class="kw">def</span> factorial(<span class="dv">1</span>):</span>
+<span id="cb33-2"><a href=""></a>    <span class="cf">if</span> <span class="dv">1</span> <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb33-3"><a href=""></a>        <span class="cf">return</span> <span class="dv">1</span></span>
+<span id="cb33-4"><a href=""></a>    <span class="cf">else</span>:</span>
+<span id="cb33-5"><a href=""></a>        <span class="cf">return</span> <span class="dv">1</span> <span class="op">*</span> factorial(<span class="dv">1</span><span class="op">-</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb34" data-code-line-numbers="3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href=""></a><span class="kw">def</span> factorial(<span class="dv">0</span>):</span>
+<span id="cb34-2"><a href=""></a>    <span class="cf">if</span> <span class="dv">0</span> <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb34-3"><a href=""></a>        <span class="cf">return</span> <span class="dv">1</span></span>
+<span id="cb34-4"><a href=""></a>    <span class="cf">else</span>:</span>
+<span id="cb34-5"><a href=""></a>        <span class="cf">return</span> <span class="dv">0</span> <span class="op">*</span> factorial(<span class="dv">0</span><span class="op">-</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column" style="width:60%;">
 <p>Finalmente, el <code>return</code> de <code>factorial(2)</code>será:</p>
-<div id="9634f1a0" class="cell" data-execution_count="16">
-<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="cf">return</span> <span class="dv">2</span> <span class="op">*</span> <span class="dv">1</span> <span class="op">*</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="00fce03c" class="cell" data-execution_count="19">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="cf">return</span> <span class="dv">2</span> <span class="op">*</span> <span class="dv">1</span> <span class="op">*</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="ccbd0def" class="cell" data-execution_count="17">
-<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="" aria-hidden="true" tabindex="-1"></a>factorial(<span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="11">
+<div id="f629bb7f" class="cell" data-execution_count="20">
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="" aria-hidden="true" tabindex="-1"></a>factorial(<span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="84">
 <pre><code>2</code></pre>
 </div>
 </div>
+</div></div>
 </section>
+<section id="ejemplo-gráfico-en-esta-versión-el-caso-base-es-distinto" class="slide level2">
+<h2>Ejemplo gráfico (En esta versión, el caso base es distinto!)</h2>
+
+<img data-src="images/ejemplorecursion.jpg" class="shadow r-stretch"></section>
 <section id="problemas-comunes" class="slide level2">
 <h2>Problemas comunes</h2>
 <p>Aunque la recursividad puede ser una herramienta poderosa, es propensa a algunos problemas comunes, como:</p>
 <ul>
-<li><strong>Superar la profundidad máxima de recursión</strong></li>
+<li><strong>🪫 Superar la profundidad máxima de recursión</strong></li>
 </ul>
 <p>Python tiene un límite de recursión por defecto de <strong><em>1000 llamadas</em></strong>. Si una función recursiva se llama a sí misma demasiadas veces, aparecerá <code>RecursionError</code>.</p>
 <ul>
-<li><strong>Falta el caso base</strong></li>
+<li><strong>🔎 Falta el caso base</strong></li>
 </ul>
 <p>Un caso base omitido o incorrecto <strong><em>hará que la función recurra infinitamente</em></strong>, provocando un desbordamiento de pila.</p>
-</section></section>
-<section id="ejercicio-laboratorio" class="title-slide slide level1 center">
-<h1>✍️Ejercicio Laboratorio</h1>
-
 </section>
+<section id="ejercicio-de-laboratorio-torres-de-hanoi" class="slide level2">
+<h2>✍️Ejercicio de Laboratorio: Torres de Hanoi</h2>
+
+<img data-src="images/apehanoi.gif" class="shadow r-stretch"><p>Simulador <strong><em>Torres de Hanoi</em></strong>: <a href="https://towersofhanoi.info/Animate.aspx" class="uri">https://towersofhanoi.info/Animate.aspx</a></p>
+
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
