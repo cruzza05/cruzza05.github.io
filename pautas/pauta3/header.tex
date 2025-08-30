@@ -1,0 +1,32 @@
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{fancyhdr}
+
+  \setlength{\headsep}{40pt}
+
+  % Estilo primera página
+  \fancypagestyle{plain}{%
+    \fancyhf{} % limpiar encabezado y pie
+    \fancyhead[L]{%
+      \parbox{8cm}{%
+        Universidad de Chile\\
+        Facultad de Ciencias Físicas y Matemáticas\\
+        Departamento de Ciencias de la Computación\\
+        CC1002-10 -- Introducción a la Programación\\
+
+      }%
+    }%
+    \fancyhead[R]{\includegraphics[height=1.5cm]{dcc2.pdf}}%
+    \fancyfoot[L]{Pauta Laboratorio \#3 - Recursividad II}%
+    \fancyfoot[R]{\thepage}%
+    \renewcommand{\headrulewidth}{0.4pt}%
+    \renewcommand{\footrulewidth}{0.4pt}%
+  }
+
+  % Estilo para el resto de páginas
+  \pagestyle{fancy}
+  \fancyhf{}
+  \fancyfoot[L]{Pauta Laboratorio \#04 - Recursividad II}
+  \fancyfoot[R]{\thepage}
+  \renewcommand{\headrulewidth}{0pt} % sin línea arriba en las demás
+  \renewcommand{\footrulewidth}{0.4pt}
